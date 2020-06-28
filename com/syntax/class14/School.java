@@ -1,0 +1,22 @@
+package com.syntax.class14;
+
+public class School {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student student = new Student();
+		student.name = "John";
+		student.lastName = "Doe";
+		student.study();
+		
+		
+		Student student1 = new Student();
+		student1.name = "Jane";
+		student1.lastName = "Smith";
+		student1.study();
+		
+		
+
+	}
+
+}
