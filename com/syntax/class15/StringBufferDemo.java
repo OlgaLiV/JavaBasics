@@ -6,9 +6,9 @@ public class StringBufferDemo {
 		strBuffer.append(" friends");
 		System.out.println(strBuffer);
 
-		String str2 = "Hello";
-		str2.concat(" friends");
-		System.out.println(str2);
+//		String str2 = "Hello";
+//		str2.concat(" friends");
+//		System.out.println(str2);
 
 	}
 }
