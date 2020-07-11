@@ -11,8 +11,7 @@ public class Students {
 	}
 
 	Students(String firstName, int a, int b, int c) {
-		name = firstName;
-		
+		name = firstName;		
 		grade1 = a;
 		grade2 = b;
 		grade3 = c;
