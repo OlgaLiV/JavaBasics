@@ -1,7 +1,7 @@
 package com.syntax.class19;
 
 public class Practice {
-	static String str = "I love my family";
+	static String str = "Happy birthday";
 
 	protected int displaySum(int[] array) {
 		int sum = 0;
