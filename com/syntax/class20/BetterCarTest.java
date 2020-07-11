@@ -6,5 +6,6 @@ public static void main(String[] args) {
 	car.displayInfo();
 	BetterCar car1 = new BetterCar("S", "Silver", 2019, 90000);
 	car1.displayInfo();
+	
 }
 }
