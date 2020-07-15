@@ -3,7 +3,7 @@ package com.syntax.class15;
 public class SplitFunction {
 	public static void main(String[] args) {
 		String str = "Today is sunny day and we have Java class";
-		String[] array = str.toLowerCase().split(" ");		
+		String[] array = str.toLowerCase().split("a");		
 		int howManyElements = array.length;
 		System.out.println(howManyElements);
 
