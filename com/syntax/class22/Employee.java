@@ -1,14 +1,16 @@
 package com.syntax.class22;
 
 public class Employee {
-	static String company;
+	public static String company;
+	protected String fullName;
 	double salary;
+	private long ssn;
 	
-	void work() {
+	public void work() {
 		System.out.println("I am working hard");
 	}
 	
-	void getPaid() {
+	public void getPaid() {
 		System.out.println("I am get paid good");
 	}
 
