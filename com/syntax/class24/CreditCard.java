@@ -7,14 +7,14 @@ public class CreditCard {
 		this.balance = balance;
 	}
 
-	double calculateInterest() {
+	public double calculateInterest() {
 		interest = (0.04 * balance) * 30;
 		return interest;
 	}
 }
 
 class Visa extends CreditCard{
-	public Visa(double balance){
+	 public Visa(double balance){
 		super(balance);
 	}
 }
@@ -23,7 +23,7 @@ class AX extends CreditCard{
 	public AX(double balance){
 		super(balance);
 	}
-	double calculateInterest() {
+	public double calculateInterest() {
 		interest = (0.055 * balance) * 30;
 		return interest;
 	}
