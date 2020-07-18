@@ -10,7 +10,11 @@ public class BirdTest {
 		bird.sleep();
 		//bird.cry(); not available
 		//during compilation compiler gives access based on reference type
-	
+		BabyBird bb = new BabyBird();
+		bb.fly();
+		bb.sleep();
+		bb.eat();
+		bb.cry();
 	}
 	
 }
