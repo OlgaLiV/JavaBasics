@@ -19,5 +19,5 @@ public class PrivateMethod {
 		obj.Display(2);
 		obj.Display(5, 10);
 	}
-
+	
 }
