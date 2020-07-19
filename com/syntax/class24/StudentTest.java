@@ -5,24 +5,24 @@ public class StudentTest {
 		Student std = new SyntaxStudent();
 		std.study();
 		std.sleepy();
-		
+
 		SyntaxStudent syntax = new SyntaxStudent();
 		syntax.inLoveWithJava();
-		
+
 		Student col = new CollegeStudent();
 		col.sleepy();
 		col.study();
-		
+
 		CollegeStudent col1 = new CollegeStudent();
 		col1.read();
-		
+
 		Student sc = new SchoolStudent();
 		sc.study();
 		sc.sleepy();
-		
-		
-		
-		
-		
+
+		Human obj1 = new SchoolStudent();
+		obj1.happy();
+		obj1.study();
+
 	}
 }
