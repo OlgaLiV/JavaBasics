@@ -1,6 +1,6 @@
 package com.syntax.class25;
 
-public class FinalKeyword {
+public final class FinalKeyword {
 
 	public static String str = "Hello";
 
@@ -25,10 +25,11 @@ public class FinalKeyword {
 		System.out.println("Last \"Hello\" for today");
 	}
 
-	class FinalBaby extends FinalKeyword {
-		//final methods cannot be overridden
+	//class FinalBaby extends FinalKeyword {
+		// final methods cannot be overridden
 //		public void hello() { CE: 
 //			System.out.println(" Sorry it not last \"Hello\" for today");
 //		}
 	}
-}
+
+//}
