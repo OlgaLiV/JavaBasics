@@ -6,10 +6,19 @@ public class MotorcycleTest {
 		Drivable d = new Bike();
 		d.breaking();
 		d.driving();
+	
+		System.out.println(Drivable.DRIVE);
+		
 		
 		System.out.println("-----Object of Motorcycle type-----");
 		Motorcycle m = new Bike();
 		m.breaking();
 		m.driving();
+		m.operateVehicle();
+		
+		System.out.println(Motorcycle.DRIVE);
+		
+		Vehicle v = new Bike();
+		v.operateVehicle();
 	}
 }
