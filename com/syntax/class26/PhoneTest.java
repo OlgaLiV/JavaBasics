@@ -15,5 +15,6 @@ public class PhoneTest {
 		samsung.navigate();
 		samsung.playMusic();
 	
+	
 	}
 }
