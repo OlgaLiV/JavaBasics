@@ -9,6 +9,7 @@ public class WebDriverTest {
 			browsers.open();
 			browsers.close();
 
+
 			System.out.println("----------------");
 
 			ChromeDriver chrome = new ChromeDriver("Chrome");

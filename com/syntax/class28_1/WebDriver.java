@@ -8,11 +8,11 @@ public interface WebDriver {
 	void close();
 }
 
-interface RemoteWebDriver extends WebDriver {
+interface RemoteWebDriver extends WebDriver, TakesScreenShot {
 	void navigate();
 }
 
-interface TakesScreenShot extends RemoteWebDriver {
+interface TakesScreenShot  {
 	void getScreenShot();
 }
 

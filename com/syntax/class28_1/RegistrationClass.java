@@ -29,7 +29,7 @@ public class RegistrationClass {
 	}
 
 	public void setPassword(String password) {
-		if (password.length() > 0 && password.length() > 6 && !password.contains(userName)) {
+		if (!password.isEmpty() && password.length() > 6 && !password.contains(userName)) {
 			this.password = password;
 		}
 	}
