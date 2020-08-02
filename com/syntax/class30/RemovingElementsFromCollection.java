@@ -41,12 +41,16 @@ public class RemovingElementsFromCollection {
 		cities.add("LA");
 		cities.add("LA");
 		cities.add("Miami");
+		cities.add("Miami");
+		cities.add("Miami");
+		cities.add("Miami");
 		System.out.println(cities);
 		
 		Iterator<String> citiesIt = cities.iterator();
 		
 		while(citiesIt.hasNext()) {
-			if(citiesIt.next().equals("LA")) {
+			String ci = citiesIt.next();
+			if(ci.equals("LA")|| ci.equals("New York")) {
 				citiesIt.remove();
 			}
 		}
