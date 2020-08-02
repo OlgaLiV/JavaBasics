@@ -19,7 +19,7 @@ public class ArrayListDemoAgain {
 		alist.add(2);
 		System.out.println(alist);
 		
-		alist.remove(2); // specifying index
+		alist.remove(2); // specifying index of element to remove
 		System.out.println(alist);
 		
 
