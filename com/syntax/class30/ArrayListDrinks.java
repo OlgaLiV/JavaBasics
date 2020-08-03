@@ -17,18 +17,14 @@ public class ArrayListDrinks {
 
 		System.out.print(drinks + " ");
 		System.out.println();
+		for (int i = 0; i < drinks.size(); i++) {
 
-		Iterator<String> drinksIt = drinks.iterator();
-		while (drinksIt.hasNext()) {
-			String d = drinksIt.next();
-			if (d.contains("e")) {
-				drinks.set(0, "water");
+			if (drinks.get(i).contains("e") || drinks.get(i).contains("a")) {
+				drinks.set(i, "water");
 			}
-//			if (d.contains("a")) {
-//				d.replace("a", "water");
-//			}
+
 		}
-		
+
 		System.out.print(drinks + " ");
 
 	}
