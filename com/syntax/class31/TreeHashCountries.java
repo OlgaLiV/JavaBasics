@@ -19,15 +19,19 @@ public class TreeHashCountries {
 		countries.put("Ukraine", "Kyiv");
 		countries.put("Egypt", "Cairo");
 		
+		System.out.println(countries);
+		
 		
 		Set<String> keys = countries.keySet();
 		for (String key : keys) {
 			System.out.println("The capital of " + key + " is " + countries.get(key));
 		}
 		System.out.println("=========================");
-		Collection<String> values = countries.values();
-		for (String value1 : values) {
-			System.out.println(value1);
+		
+		Iterator<String> values = countries.values().iterator();
+		while(values.hasNext()) {
+			String v = values.next();
+			System.out.println(v);
 		}
 
 
