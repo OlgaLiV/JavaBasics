@@ -22,9 +22,7 @@ public class SumOfIntegersCollection {
 		Iterator<Integer> it = numbers.iterator();
 		int sum = 0;
 		while (it.hasNext()) {
-
 			sum += it.next();
-
 		}
 		System.out.println(sum);
 	}
