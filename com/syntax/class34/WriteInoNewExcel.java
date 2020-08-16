@@ -17,7 +17,10 @@ public class WriteInoNewExcel {
 	 	String filePath = System.getProperty("user.dir") + "/testdata/MyFile.xlsx";
 	 	FileOutputStream fos = new FileOutputStream(filePath);
 	 	
-	 	wbook.write(fos);
+	 	wbook.write(fos);	 	
+	 	wbook.close();
+	 	fos.close();
+	 	
 		
 		
 	}
