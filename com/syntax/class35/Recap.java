@@ -1,4 +1,4 @@
-package com.syntax.class34;
+package com.syntax.class35;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,13 +6,12 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DataFromExcelIntoListOfMaps {
+public class Recap {
 
 	public static void main(String[] args) throws IOException {
 
@@ -25,39 +24,16 @@ public class DataFromExcelIntoListOfMaps {
 		// Get number of rows and columns
 		int rows = sheet.getPhysicalNumberOfRows();
 		int cols = sheet.getRow(0).getPhysicalNumberOfCells();
-		// create an empty List
 		List<Map<String, String>> xlList = new ArrayList<>();
-		
-		// loop over rows
 		for (int r = 1; r < rows; r++) {
-			// foe every column create a new Map
-			Map<String, String> map = new LinkedHashMap<>();
-			// loop over every column
+			Map<String, String> lmap = new LinkedHashMap<>();
+
 			for (int c = 0; c < cols; c++) {
-				// get keys from 1 rows (header)
-				String key = sheet.getRow(0).getCell(c).toString();
-				// get values from other rows
-				String value = sheet.getRow(r).getCell(c).toString();
-				// store values from each cell of the row into map
-				map.put(key, value);
-				
+				lmap.put(sheet.getRow(0).getCell(c).toString(), sheet.getRow(r).getCell(c).toString());
+
 			}
-			//add created map with values into list
-			xlList.add(map);
-		}
-		
-		System.out.println(xlList);
-		
-		System.out.println("----- Printing maps 1 by 1");
-		for(Map<String, String> littleMap:xlList) {
-			System.out.println(littleMap);
-			Set<String> key = littleMap.keySet();
-			for (String k : key) {
-				System.out.println(littleMap.get(k));
-			
-			}
+			xlList.add(lmap);
 		}
 
 	}
-
 }
