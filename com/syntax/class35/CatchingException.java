@@ -12,7 +12,8 @@ public class CatchingException {
 			// throw new ArithmeticException 
 		}catch(Exception ae) {
 			// Exception ae = new ArithmeticException();
-			ae.printStackTrace();
+			// to see message about exception -->
+			//ae.printStackTrace();
 			//System.out.println(ae.getMessage());
 			//System.out.println(ae);
 						
